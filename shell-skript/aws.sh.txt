@@ -14,4 +14,5 @@ aws ec2 authorize-security-group-ingrees --group-name gbs-sec-group --protocol t
 
 
 # EC2-Instanz erstellen
+
 aws ec2 run-instances --image-id ami-0574da719dca65348 --count 1 --instance-type t2.micro --key-name WP-Projekt --security-groups m346-sec-group --user-data file://~/Modul346aws/cloud-init/cloud-init.yml --tag-specifications 'ResourceType=instance,Tags=[{Key=Name,Value=Webserver}]'
