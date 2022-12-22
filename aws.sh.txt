@@ -1,0 +1,13 @@
+
+#!/bin/bash
+
+# Schlüsselpaar erstellen
+
+aws ec2 create-key-pair --key-name WP-Projekt --key-type rsa --query 'KeyMaterial' --output text | out-file -encoding ascii filepath ~./ssh/WP-Projekt.pem
+
+
+# Sicherheitsgruppe erstellen 
+
+aws ec2 create-security-group --group-name m346-sec-group --description "EC2-Webserver-SG"
+aws ec2 authorize-security-group-ingrees --group-name gbs-sec-group --protocol tcp --port 80 --cidr 0.0.0.0/0
+aws ec2 authorize-security-group-ingrees --group-name gbs-sec-group --protocol tcp --port 22 --cidr 0.0.0.0/0

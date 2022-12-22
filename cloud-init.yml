@@ -1,0 +1,32 @@
+#cloud-config
+
+# Install apache webserver and php
+packages:
+  - apache2
+  - php
+  - libapache2-mod-php
+
+# Install mysql
+runcmd:
+  - apt-get install mysql-server
+
+# Configure mysql
+- echo "CREATE DATABASE wordpress;" | mysql -u root
+- echo "GRANT ALL PRIVILEGES ON wordpress.* TO 'wp_user'@'localhost' IDENTIFIED BY 'wp_password';" | mysql -u root
+- echo "FLUSH PRIVILEGES;" | mysql -u root
+
+# Download and install wordpress
+runcmd:
+  - wget https://wordpress.org/latest.tar.gz
+  - tar -xzvf latest.tar.gz
+  - mv wordpress/* /var/www/html
+
+# Configure wordpress
+- cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
+- sed -i -e "s/database_name_here/wordpress/" /var/www/html/wp-config.php
+- sed -i -e "s/username_here/wp_user/" /var/www/html/wp-config.php
+- sed -i -e "s/password_here/wp_password/" /var/www/html/wp-config.php
+
+# Restart apache
+runcmd:
+  - service apache2 restart
