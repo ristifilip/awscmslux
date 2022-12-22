@@ -3,7 +3,7 @@
 
 # Schlüsselpaar erstellen
 
-aws ec2 create-key-pair --key-name WP-Projekt --key-type rsa --query 'KeyMaterial' --output text > ~/.ssh/wp-projekt.pem
+aws ec2 create-key-pair --key-name WP-Projekt --key-type rsa --query 'KeyMaterial' --output text >~/.ssh/wp-projekt.pem
 
 
 # Sicherheitsgruppe erstellen 
