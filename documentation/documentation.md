@@ -2,10 +2,6 @@
 
 
 
-[TOC]
-
-
-
 ## Projektbeschreibung
 
 Dieses Projekt beschreibt, wie man Wordpress mit Skripts auf einer AWS EC2-Instanz erstellt.  
@@ -97,7 +93,11 @@ Mein Aufgabenbereich bestand darin, das Git zu verwalten und die verschiedenen S
 
 Ich war während des Projekts mit der Implementierung von AWS beschäftigt und muss sagen, dass ich von den Möglichkeiten und der Benutzerfreundlichkeit der Plattform beeindruckt war. Eines der Kriterien, das für mich besonders wichtig war, war die Skalierbarkeit und Verfügbarkeit von Ressourcen. AWS hat diese Kriterien vollständig erfüllt und ich hatte keine Probleme damit, Ressourcen bereitzustellen oder zu skalieren, wenn sie benötigt wurden. Ein weiterer positiver Aspekt von AWS war die grosse Auswahl an Diensten und Tools, die zur Verfügung standen. Es gab immer eine Lösung für jedes Problem, das wir hatten, und die Dokumentation und das Support-Team waren auch sehr hilfreich.
 
+## Autoren
 
+**Filip Ristic** Zuständig für die Skripts 
+**David Meglaj** Zuständig für die direkte AWS-Verwaltung, Befehle 
+**Elzan Ajdari** Zuständig für die MD-Dokumentation
 
 ## Quellenverzeichnis
 
@@ -112,3 +112,5 @@ https://docs.aws.amazon.com/
 
 raw.githubusercontent.com/wp-cli/(2022), abgerufen am 23.12.2022
 https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar
+
+
