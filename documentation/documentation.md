@@ -96,7 +96,9 @@ Ich war während des Projekts mit der Implementierung von AWS beschäftigt und m
 ## Autoren
 
 **Filip Ristic** Zuständig für die Skripts 
+
 **David Meglaj** Zuständig für die direkte AWS-Verwaltung, Befehle 
+
 **Elzan Ajdari** Zuständig für die MD-Dokumentation
 
 ## Quellenverzeichnis
