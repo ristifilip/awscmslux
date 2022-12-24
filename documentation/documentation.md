@@ -65,7 +65,7 @@ Sobald Wordpress konfiguriert wurde, wird eine Beispiels-Landingpage generiert. 
 
 ### Private Key 
 
-![PrivateKey](C:\Users\filip.ristic\Downloads\PrivateKey.png)
+![PrivateKey](https://i.ibb.co/85NfyGk/Private-Key.png)
 
 Im Shell-Skript wird als erstes im Ordner *~.ssh* ein Private Key mit dem Namen **WP-Projekt** erstellt. Dass das Erstellen des Private erstellt wird, ist hier ersichtlich. Das Überprüfen des Vorhandenseins des Private Key's wurde eine halbe Stunde nach dem Ausführen des Skripts durchgeführt.
 Falls dies nicht der Fall ist, muss dringend ein neuer Schlüssel generiert werden, da sonst der SSH-Zugriff nicht möglich ist.
@@ -75,7 +75,7 @@ Falls dies nicht der Fall ist, muss dringend ein neuer Schlüssel generiert werd
 
 ### MySQL - Zugriff mit Root-Passwort aus Mysql_access.txt
 
-![mysql-connection](C:\Users\filip.ristic\Downloads\mysql-connection.png)
+![mysql-connection](https://i.ibb.co/6ZCMV0F/mysql-connection.png)
 
 Das **Root-Passwort** wird mit dem **Cloud-Init Skript generiert** und in */home/mysql_access.txt* abgelegt. Hier wurde der Zugriff auf den MySQL-Server getestet, welches mit dem Cloud-Init Skript installiert wird.
 Dies ist eine umständige, jedoch sehr sichere Methode, da das Passwort nicht in der Cloud-Init Datei vorkommt und nur von Benutzern mit Zugriff auf den Server gelesen werden kann.
